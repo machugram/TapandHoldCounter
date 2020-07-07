@@ -13,8 +13,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        numberLabel.text = String(count)
     }
 
+    @IBOutlet weak var numberLabel: UILabel!
+    var  count = 0
+    @IBAction func Reset(_ sender: UIBarButtonItem) {
+        count = 0
+        numberLabel.text = String(count)
+    }
+    @IBAction func TapButtonPressed(_ sender: UITapGestureRecognizer) {
+            count = count + 1
+            numberLabel.text = String(count)
+        }
+    @IBAction func HoldButtonPressed(_ sender: UILongPressGestureRecognizer) {
+        count = count + 1
+        numberLabel.text = String(count)
 
+    }
 }
 
