@@ -1,6 +1,6 @@
 # TapandHoldCounter.  
 Project Two Of The 40 Projects Of Swift
 
-This project is a tap and hold and counter that starts from one and increases upwards.
+An iOS app that increases in count when the user taps or holds on the button. 
 This helped me understand the difference between gesture recognizers and touch events.
-Using the tapGestureRecognizer and LongPressGestureRecognizer, the number increment speed  varies.
+Using the tapGestureRecognizer and LongPressGestureRecognizer, the count increment speed  varies.
